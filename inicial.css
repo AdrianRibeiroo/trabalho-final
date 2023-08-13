@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'inter', sans-serif;
+}
+header{
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+}
+#menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 6rem;
+}
+#logomarca{
+    display: flex;
+    align-items: center;
+    width: 175px;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item{
+    margin: 0 15px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 400;
+}
+.nav-item:hover {
+  transform: scale(1.15); 
+}
+
+.nav-link:hover {
+  color: #219ebc;
+}
+#pesquisa{
+    padding-top: 75px;
+}
+
+.search-container{
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+input#search-bar{
+  margin: 0 auto;
+  width: 100%;
+  height: 30px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+    border: 1px solid #000000;
+    transition: 0.35s ease;
+    color: #000000;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   }
+ }
+
+.search-icon{
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -54px;
+  right: -45px;
+}
+#text1{
+  text-align: center;
+  margin-top: 20px; 
+  font-size: 25px;
+}
+#marcas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#marcas ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+#marcas li {
+  margin: 0 55px; 
+  position: relative;
+}
+#marcas li:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; 
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000; 
+}
+#nike{
+  width: 150px;
+}
+#adidas{
+  width: 150px;
+}
+#puma{
+  width: 150px;
+}
+#vans{
+  width: 150px;
+}
+#all{
+  width: 150px;
+}
+#text2{
+  text-align: center;
+  margin-top: 20px; 
+  font-size: 25px;
+}
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  flex-basis: calc(25% - 20px);
+  transition: transform 0.3s ease; 
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; 
+}
+
+.product:hover {
+  transform: scale(1.05); 
+}
+
+.product:hover img {
+  transform: scale(1.2); 
+}
+
+.produto-nome {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.produto-preco {
+  color: #e74c3c;
+}
+#sobre{
+ text-align: center;
+ margin-left: 90px;
+ margin-right: 90px;
+}
+footer{
+  background-color: #24252a;
+  color: white;
+  margin-top: 25px;
+}
+#rodape {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#rodape > div {
+  flex: 1;
+  padding: 0 20px;
+}
+#rodape div#redes {
+  margin-top: 80px;
+}
+#rodape h3 {
+  margin-bottom: 10px;
+}
+
+#insta,
+#face1,
+#x {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#insta img,
+#face1 img,
+#x img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.nav-item.current {
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 5px; 
+  font-weight: bold; 
+}
